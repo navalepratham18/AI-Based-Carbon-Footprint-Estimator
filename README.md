@@ -52,45 +52,9 @@
 
 ## 🏗️ Project Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│            EcoGuard - Full Integration Stack            │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  ┌─────────────────┐        ┌──────────────────────┐   │
-│  │   React Vite    │        │  5-Step Wizard UI    │   │
-│  │   Frontend      │◄─────►│  (Framer Motion)     │   │
-│  │  (Dashboard)    │        └──────────────────────┘   │
-│  └────────┬────────┘                                    │
-│           │                                             │
-│           │ ┌─────────────────────────────────────┐    │
-│           ├─►│  Lifestyle Regression              │    │
-│           │  │  (XGBoost Stacking Ensemble)       │    │
-│           │  │  Input: 18 features     R²=0.9800  │    │
-│           │  └─────────────────────────────────────┘    │
-│           │                                             │
-│           │ ┌─────────────────────────────────────┐    │
-│           ├─►│  Computer Vision (YOLO)            │    │
-│           │  │  Waste Detection + Weight Est      │    │
-│           │  │  Accuracy: mAP50=96%               │    │
-│           │  └─────────────────────────────────────┘    │
-│           │                                             │
-│           │ ┌─────────────────────────────────────┐    │
-│           └─►│  IoT Sensor Monitoring             │    │
-│              │  Real-time MQ-7 gas tracking       │    │
-│              │  Flask API + Time-series ML        │    │
-│              └─────────────────────────────────────┘    │
-│                        │                                │
-│                        ▼                                │
-│              ┌──────────────────────┐                   │
-│              │  Aggregated Results  │                   │
-│              │  ├─ Total CO2 (kg)   │                   │
-│              │  ├─ Category Split   │                   │
-│              │  ├─ Trees Required   │                   │
-│              │  └─ Offset Goals     │                   │
-│              └──────────────────────┘                   │
-└─────────────────────────────────────────────────────────┘
-```
+<div align="center">
+  <img width="454" height="711" alt="image" src="https://github.com/user-attachments/assets/a2a134db-d332-4918-bce3-2fafe0c5ae9c" />
+</div>
 
 ---
 
@@ -756,53 +720,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - 📋 [Executive Summary](./SUMMARY.txt)
 - 🐛 [Issue Tracker](https://github.com/shreekant-lohagale/Code4Society/issues)
 - 💬 [Discussions](https://github.com/shreekant-lohagale/Code4Society/discussions)
-
----
-
-## 🚀 Roadmap
-
-### Phase 1: MVP ✅ COMPLETE
-- [x] Lifestyle regression model (R² = 0.9800+)
-- [x] YOLO waste detection (mAP50 = 96%)
-- [x] React dashboard UI
-- [x] FastAPI backend integration
-
-### Phase 2: Enhancement (Q2 2026)
-- [ ] Cloud deployment (AWS/Vercel)
-- [ ] User authentication & data persistence
-- [ ] Historical tracking & time-series graphs
-- [ ] Mobile app (React Native)
-
-### Phase 3: Advanced Features (Q3-Q4 2026)
-- [ ] Receipt OCR scanning
-- [ ] Community leaderboards
-- [ ] Smart home integration
-- [ ] Causal inference modeling
-- [ ] Browser extension
-
----
-
-## 📊 Project Statistics
-
-```
-Codebase:
-├── Frontend:     ~2,500 lines (React + Tailwind)
-├── Backend:      ~1,800 lines (FastAPI + ML)
-├── ML Training:  ~4,200 lines (Jupyter notebooks)
-└── Total:        ~8,500 lines of code
-
-Models:
-├── Regression:   8 SOTA algorithms benchmarked
-├── Vision:       1,800 training images
-├── IoT:          Real-time sensor integration
-└── Ensemble:     Tri-modal aggregation
-
-Performance:
-├── Accuracy:     98% (Regression), 96% (Vision)
-├── Speed:        <100ms (Regression), 2.4ms (Vision)
-├── Deployment:   Production-ready
-└── Status:       ✅ Hackathon Ready
-```
 
 ---
 
